@@ -290,13 +290,10 @@ button:hover {
 
 .about-section p {
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto 30px auto;
     color: #555;
     font-size: 16px;
-}
-
-.about-section p {
-    margin-bottom: 25px;
+    line-height: 1.8;
 }
 
 .info-section {
