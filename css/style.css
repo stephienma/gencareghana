@@ -64,28 +64,30 @@ body {
     margin-top: 20px;
 }
 
-.donate {
+.hero-btn {
+    display: inline-block;
+    background-color: #006837;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background-color: #004d2e;
+    color: white;
+}
+
+.hero-btn.donate {
     background-color: #f4a300;
     color: black;
 }
 
-button:hover {
-    background-color: #004d2e;
-    color: white;
-}
-
-button {
-    background-color: #006837;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #004d2e;
+.hero-btn.donate:hover {
+    background-color: #d98f00;
+    color: black;
 }
 
 .navbar {
@@ -204,7 +206,8 @@ button:hover {
     margin-top: 25px;
 }
 
-.cta-section button {
+.cta-section a {
+    display: inline-block;
     padding: 12px 20px;
     margin: 10px;
     border: none;
@@ -212,6 +215,7 @@ button:hover {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .donate-btn {
@@ -230,7 +234,7 @@ button:hover {
     color: white;
 }
 
-.cta-section button:hover {
+.cta-section a:hover {
     transform: scale(1.05);
 }
 
@@ -273,6 +277,20 @@ button:hover {
 
 .footer {
     border-top: 4px solid var(--purple);
+}
+
+.footer-box a {
+
+    color: #d0d0d0;
+
+    text-decoration: none;
+
+}
+
+.footer-box a:hover {
+
+    color: #f4a300;
+
 }
 
 
@@ -353,7 +371,6 @@ button:hover {
     justify-content:center;
     gap:30px;
     flex-wrap:wrap;
-
     max-width:1100px;
     margin:auto;
 }
@@ -361,22 +378,16 @@ button:hover {
 
 .value-card{
     flex:0 1 300px;
-
     background:white;
     padding:30px;
-
     border-radius:12px;
-
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
-
     border-top:4px solid var(--green);
-
     transition:0.3s;
 }
 
 .value-card:hover{
     transform:translateY(-8px);
-
     border-top:4px solid var(--purple);
 }
 
@@ -390,7 +401,61 @@ button:hover {
     line-height:1.7;
 }
 
+.about-page-header p {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px !important;
+    line-height: 1.8;
+}
 
+.about-image {
+    max-width: 900px;
+    margin: 20px auto 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.about-impact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.about-impact-image {
+    flex: 1;
+}
+
+.about-impact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.about-impact-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-impact-cards .about-card {
+    width: auto;
+    margin: 0;
+}
 
 #PROJECTS SECTION
 
@@ -402,12 +467,6 @@ button:hover {
 
 .page-header h1 {
     color: var(--purple);
-}
-
-.page-header p {
-    max-width: 700px;
-    margin: auto;
-    color: #555;
 }
 
 .projects-grid {
@@ -456,6 +515,35 @@ button:hover {
     max-width: 700px;
     margin: auto;
     color: #555;
+}
+
+.project-btn {
+    display: inline-block;
+    background-color: #f4a300;
+    color: black;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #d98f00;
+    color: black;
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card {
+    overflow: hidden;
 }
 
 #CONTACT SECTION
@@ -634,4 +722,53 @@ button:hover {
     flex-wrap:wrap;
 
     padding:60px 20px;
+}
+
+
+#FHAWE SECTION
+
+.project-detail {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.project-title {
+    text-align: center;
+    color: var(--black);
+    font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.project-detail-image {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.project-detail p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
 }
