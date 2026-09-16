@@ -124,6 +124,46 @@ body {
     color: #f4a300;
 }
 
+/* ABOUT DROPDOWN */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #006837;
+    min-width: 180px;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #004d2e;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .stats-section {
     text-align: center;
     padding: 80px 20px;
@@ -193,6 +233,48 @@ body {
 .projects-card p {
     color: #555;
     font-size: 14px;
+}
+
+.partners-section {
+    background-color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.partners-section h2 {
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.partners-intro {
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    width: 220px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logo img {
+    max-width: 100%;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .cta-section {
@@ -771,4 +853,75 @@ body {
     object-fit: cover;
     border-radius: 10px;
     display: block;
+}
+
+
+#TEAM PAGE
+
+.team-page-header {
+    background-color: #f4f7f6;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.team-page-header h1 {
+    color: var(--black);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.team-page-header p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+.team-section {
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 350px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--green);
+}
+
+.team-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.team-card h2 {
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.team-card h3 {
+    color: var(--black);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.team-card p {
+    color: #555;
+    line-height: 1.7;
 }
